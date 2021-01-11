@@ -8,8 +8,8 @@ var smtpTransport = mailer.createTransport({
     requiresAuth: true,
     domains: ["gmail.com", "googlemail.com"],
     auth: {
-        user: "testemail@emaconsultancy.nl", 
-        pass: "ematest123"
+        user: "someemail@email.com", 
+        pass: "some pass"
     }
 });  
 
@@ -21,7 +21,7 @@ module.exports = {
         var html_body = `<p>Verify url ${verificationURL} </p>`;
 
         const mailOptions = {
-            from: 'testemail@emaconsultancy.nl', // sender address
+            from: 'someemail@email.com', // sender address
             to: 'rgeworkan@gmail.com',           // list of receivers
             subject: 'Welcome to Jimploy!',      // Subject line
             html: html_body                      // plain text body

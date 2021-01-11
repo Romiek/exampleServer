@@ -11,7 +11,7 @@ var rjwt = require('express-jwt');
 
 const server = express();
 
-const mongodb_url =  'mongodb://admin:admin123@ds153974.mlab.com:53974/user_api';
+const mongodb_url =  'mongodb://user:pass@some.url';
 
 const port = 5000;
 const port_https = 443;
