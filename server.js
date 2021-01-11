@@ -61,7 +61,7 @@ server.get('/api/test', (req, res) => {
 
 server.listen(port, () => { 
   mongoose.set('useFindAndModify', false);
-  mongoose.connect(mongodb_url, {useNewUrlParser: true} );
+  //mongoose.connect(mongodb_url, {useNewUrlParser: true} );
   console.log(`Server running on port ${port}` );
 });
 
