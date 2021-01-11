@@ -36,10 +36,6 @@ server.use(bodyParser.json());
 
 // test path
 server.get('/api/test', (req, res) => {
-  var authorization = req.headers.authorization;
-  console.log(authorization);
-  var token = authorization.split(" ");
-  console.log(token[1]);
 
   const customers = [
     {id: 1, firstName: 'John', lastName: 'Doe'},
